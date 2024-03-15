@@ -1,0 +1,11 @@
+{
+    "urls": [
+      "https://www.coursera.org/search?query=&topic%5B0%5D=Physical%20Science%20and%20Engineering&topic%5B1%5D=Computer%20Science&topic%5B2%5D=Information%20Technology",
+      "https://www.coursera.org/search?topic=Computer+Science&topic%5B0%5D=Physical+Science+and+Engineering&topic%5B1%5D=Computer+Science&topic%5B2%5D=Information+Technology",
+      "https://www.coursera.org/search?topic=Data+Science&topic%5B0%5D=Physical+Science+and+Engineering&topic%5B1%5D=Computer+Science&topic%5B2%5D=Information+Technology",
+      "https://www.coursera.org/search?page=2&topic%5B0%5D=Physical+Science+and+Engineering&topic%5B1%5D=Computer+Science&topic%5B2%5D=Information+Technology",
+      "https://www.coursera.org/search?page=3&topic%5B0%5D=Physical+Science+and+Engineering&topic%5B1%5D=Computer+Science&topic%5B2%5D=Information+Technology",
+      "https://www.coursera.org/search?page=4&topic%5B0%5D=Physical+Science+and+Engineering&topic%5B1%5D=Computer+Science&topic%5B2%5D=Information+Technology"
+    ]
+  }
+ 
