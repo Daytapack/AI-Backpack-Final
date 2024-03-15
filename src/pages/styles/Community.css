@@ -1,0 +1,186 @@
+/* Style for the community page */
+.community-page {
+  text-align: center;
+  margin-top: 35px;
+  color: black;
+  font-size: 30px;
+}
+
+.images{
+  width: 25px; 
+  height: 25px;
+}
+  
+/* Category filter buttons */
+.category-buttons {
+  display: flex; /* This makes the buttons display in a row */
+  justify-content: center;/*to center the buttons*/
+  gap: 10px; /* Adds some space between the buttons */
+  margin-bottom: 20px; /* Adds some space below the buttons */
+  font-size: large;
+}
+/*Changing the size of the category buttons*/
+.category-buttons button{
+  height: 40px;
+}
+/* It will stack the buttons in the window size changes */
+@media screen and (max-width: 768px) {
+  .category-buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center; /* Center align the buttons vertically */
+  }
+}
+.category-image {
+  height: 35px; /* Maintain the aspect ratio of the image */
+  width: 35px;
+  position: absolute; /* Set the position to absolute */
+  top: 0; /* Align to the top of the opportunity-card container */
+  right: 0; /* Align to the right of the opportunity-card container */
+  transform: translate(-10px, 10px); /* Optional: Adjust position with translation */
+}
+
+/* This is for the inactive buttons in the category*/
+.btn-light {
+  cursor: pointer;
+  background-color: #323d7b;
+  margin: 5px;
+  border: 1px solid #0c1a34;
+  color: #ffffff;
+  font-size: large;
+  height: 30px;
+  width: 200px;
+} 
+.btn-light.active {
+  background-color: #19b99a;
+  color: #fff;
+}
+.btn-light:hover {
+  background-color: #1c2346;
+}
+/* this is for the active button */
+.btn-dark{
+  background-color: #19b99a;
+  color: #fff;
+}
+  
+/* The box where we display the opportunities in */
+.opportunity-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+  justify-content: center; /* Initially center the opportunities */
+  position: relative; /* will make the opportunities load from left to right */
+  padding-bottom: 50px;
+}
+/* The information of the opportunities been display */
+.opportunity-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; /* Fixed width for the opportunity card */
+  height: 300px; /* Fixed height for the opportunity card */
+  /* text-align: left; */
+  background-color: #ffffff;
+  position: relative; /* Add relative positioning to the opportunity card */
+}
+.opportunity-card h2 {
+  font-size: 20px; 
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.opportunity-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-align: center;
+}
+.opportunity-card .buttons-container {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 10px; */
+}
+.learnmore-button {
+width: 200px;
+height: 35px;
+background-color: #0daeca;
+color: #ffffff;
+border: none;
+cursor: pointer;
+font-size: large;
+}
+.Save-button {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #0daeca;
+border: none;
+width: 40px;
+height: 35px;
+margin-left: 15px;
+}
+.Save-button img {
+height: 25px;
+width: 25px;
+cursor: pointer;
+}
+/* When you are hovering over the button the color will become darker */
+.Save-button:hover, .learnmore-button:hover{
+  background-color: #70b4db;
+}
+.save-dialog {
+  /* For Position Layout */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* For Background & Border Formatting */
+  /* background: rgb(249, 255, 244); */
+  background: linear-gradient(to right, #a1ffce, #faffd1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* For Text Formatting */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+.save-dialog p {
+  margin-bottom: 20px;
+}
+.close-button {
+  cursor: pointer;
+  margin-top: 20 px;
+  background-color: #ffffff;
+}
+.close-button:hover {
+  width: 65px;
+  height: 35px;
+}
+
+.loadmore-button {
+  background-color: #0daeca;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Add this line to center the button horizontally */
+}
+
+  

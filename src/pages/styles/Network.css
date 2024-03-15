@@ -1,0 +1,89 @@
+.Network {
+    text-align: center;
+    margin-top: 35px;
+    color: black;
+    font-size: 30px;
+  }
+  .profile-containers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    justify-content: center; /* Initially center the opportunities */
+    position: relative; /* will make the opportunities load from left to right */
+    padding-bottom: 50px;
+  }
+  .profile-box{
+    /* display: flex; */
+    flex-direction: column;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; /* Fixed width for the opportunity card */
+    height: 300px; /* Fixed height for the opportunity card */
+    /* text-align: left; */
+    background-color: #ffffff;
+    position: relative; 
+  }
+  .profile-box img{
+    width: 80px;
+    height: 80px;
+  }
+  .profile-info{
+    text-align: center;
+  }
+ 
+  .popup {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #a1ffce, #faffd1);
+    padding: 15px; /* Adjust the padding as needed */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  
+  
+  .closebtn{
+    cursor: pointer;
+    margin-top: 20 px;
+    background-color: #ffffff;
+  }
+  .connectbtn{
+    background-color: #0daeca;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* This centers the button horizontally */
+    margin-bottom: 25px;
+  }
+  .connectbtn:hover{
+    background-color: #0e90a7;
+  }
+
+
+  .green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  

@@ -1,0 +1,52 @@
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.search img {
+    width: 25px; /*Increase the width and height for a larger image */
+    height: 25px;
+}
+
+.search input {
+    font-size: 20px; /* Adjust the font size to your preference */
+    width: 600px;
+    height: 50px;
+    text-align: center; /* Center the text horizontally */
+    vertical-align: middle; /* Center the text vertically */
+}
+
+.custom-button {
+    background-color:  #19b99a; /* Set the background color of the button */
+    border: none; /* Remove the default button border */
+    padding: 10px 20px; /* Adjust padding to control button size */
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.clear-button {
+    background-color:  #19b99a; /* Set the background color of the button */
+    border: none; /* Remove the default button border */
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    margin-top: 0px;
+    font-size: large;
+}
+
+.button-image {
+    width: 100%; /* Ensure the image takes up the entire button width */
+    height: 100%; /* Automatically adjust the image height while maintaining aspect ratio */
+    margin-right: 10px; /* Add some spacing between the image and text, adjust as needed */
+    align-items: center;
+    justify-content: center;
+  }
+.custom-button:hover,.clear-button:hover{
+   background-color: #0f8e74; 
+
+}

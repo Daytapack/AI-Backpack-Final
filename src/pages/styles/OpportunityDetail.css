@@ -1,0 +1,40 @@
+.DetailWindow {
+    /* For Position Layout */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* For Sizing */
+    height: 300px;
+    width: 700px;
+    /* For Background & Border Formatting */
+    /* background: rgb(249, 255, 244); */
+    background: linear-gradient(to right, #a1ffce, #faffd1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* For Text Formatting */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .DetailWindow h2 {
+    margin-bottom: 30px;
+  }
+
+  .DetailWindow p {
+    margin-bottom: 20px;
+  }
+
+  .close-button {
+    cursor: pointer;
+    margin-top: 20 px;
+    background-color: #ffffff;
+  }
+
+  .close-button:hover {
+    width: 65px;
+    height: 35px;
+  }

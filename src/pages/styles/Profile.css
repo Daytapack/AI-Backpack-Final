@@ -1,0 +1,32 @@
+/* Profile.css */
+
+.profile {
+    max-width: 600px; 
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+  }
+  .profile h2 {
+    text-align: center;
+    color: #000000;
+    margin-top: 0px;
+  }
+  .profile p{
+    font-size: large;
+  }
+  .edit-btn{
+    background-color: #19b99a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .edit-btn:hover{
+    background-color: #3ba892;
+
+  }

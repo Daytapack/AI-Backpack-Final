@@ -1,0 +1,72 @@
+/* EditProfile.css */
+
+.editprofile {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+}
+
+.editprofile h2 {
+  text-align: center;
+  color: #000000;
+  margin-top: 0px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.savebutton {
+  background-color: #19b99a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  width: 250px;
+}
+.closebutton{
+  background-color: #323d7b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  width: 250px;
+
+}
+.savebutton:hover {
+  background-color: #3ba892;
+}
+.closebutton:hover {
+  background-color: #28305a;
+}
+
+.edit-btns{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
