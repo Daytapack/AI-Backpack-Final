@@ -4,7 +4,7 @@ import mysql from 'mysql2/promise';
 import cron from 'node-cron';
 import fs from 'fs';
 
-import { dbConfig } from './config.js';
+import { dbConfig } from '../config.js';
 
 let resultSize = 0;
 

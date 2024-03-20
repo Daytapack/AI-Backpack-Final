@@ -4,29 +4,32 @@ import mysql from 'mysql2/promise';
 import cron from 'node-cron';
 import fs from 'fs';
 
-import { dbConfig } from './config.js';
+import { dbConfig } from '../config.js';
 
 cron.schedule("* * * * * *", async function () {
     try {
-        const url = 'https://program.mentornet.org/login';
+        const url = 'https://globalmentorship.org/mentorship-program';
 
         const response = await gotScraping(url);
         const html = response.body;
         const $ = cheerio.load(html);
 
         // Extract information from HTML
-        const name = 'Mentornet';
+        const name = 'GMI Mentorship Model'; // Updated name
         const deadline = null;
-
-        // Summarize the schedule
-        const scheduleDetails = $('p.eplus-wGu723.eplus-wrapper').text().trim();
-        const summarizedSchedule = summarizeSchedule(scheduleDetails);
-
-        const field = 'STEM';
+        const schedule = '14 one hour sessions';
         const location = 'Virtual';
+        const field = 'All';
+
+        // Extract requirements from specific section
+        const requirements = $('div.et_pb_module.et_pb_text.et_pb_text_7.et_pb_text_align_left.et_pb_bg_layout_light p')
+            .text()
+            .trim();
 
         // Extract details from specific section
-        const details = $('p.eplus-msR369.eplus-wrapper').text().trim();
+        const details = $('div.et_pb_section.et_pb_section_5.et_section_regular div.et_pb_module.et_pb_text.et_pb_text_6.et_pb_text_align_left.et_pb_bg_layout_light p')
+            .text()
+            .trim();
 
         // Create a result object
         const result = {
@@ -34,12 +37,12 @@ cron.schedule("* * * * * *", async function () {
             Name: name,
             Deadline: deadline,
             Field: field,
-            Reqs: '',
-            Schedule: summarizedSchedule,
+            Reqs: requirements,
+            Schedule: schedule,
             Location: location,
             Details: details,
             URL: url,
-            Organization: 'Great Minds in STEM',
+            Organization: 'Global Mentorship Initiative', // Updated organization
         };
 
         // Insert the result into the MySQL table
@@ -53,10 +56,3 @@ cron.schedule("* * * * * *", async function () {
         console.error('Error:', error);
     }
 });
-
-// Function to summarize the schedule information
-function summarizeSchedule(details) {
-    // Your logic to summarize the schedule information goes here
-    // For now, let's just return the first 100 characters as an example
-    return details.substring(0, 100);
-}
